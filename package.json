@@ -1,0 +1,28 @@
+{
+  "name": "web-monitor",
+  "version": "1.0.0",
+  "description": "前端监控SDK",
+  "source": "src/index.ts",
+  "main": "dist/web-monitor.js",
+  "exports": "dist/web-monitor.modern.js",
+  "module": "dist/web-monitor.module.js",
+  "unpkg": "dist/web-monitor.umd.js",
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "api:init": "api-extractor init",
+    "api:run": "api-extractor run --local --verbose",
+    "api:doc": "typedoc --out docs src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "huanglin",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.13.0"
+  },
+  "dependencies": {
+    "@microsoft/api-extractor": "^7.13.2",
+    "typedoc": "^0.20.30",
+    "web-vitals": "^1.1.0"
+  }
+}
